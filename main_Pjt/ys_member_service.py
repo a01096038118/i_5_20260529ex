@@ -1,8 +1,8 @@
-from module_ex_001 import user_delete
-from module_ex_001 import sign_up
-from module_ex_001 import sign_in
-from module_ex_001 import sign_out
-from module_ex_001 import modify_profile
+from ys_module_ex_001 import user_delete
+from ys_module_ex_001 import sign_up
+from ys_module_ex_001 import sign_in
+from ys_module_ex_001 import sign_out
+from ys_module_ex_001 import modify_profile
 member = {}
 current_user = None
 

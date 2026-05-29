@@ -1,5 +1,7 @@
 import random
 
+
+
 def sign_up(member):
     print(('회원가입을 하시려면 가입하시려는 UID, UPW, UMAIL, UPHONE를 입력해 주세요.' ))
     UID = input('UserId: ')
@@ -23,31 +25,27 @@ def sign_up(member):
         UPHONE = input('UserPhone: ')
 
         print('회원가입이 완료되었습니다.')
-        
         member[UID] = {
             'UID': UID,
             'UPW': UPW,
             'UEMAIL': UEMAIL,
             'UPHONE': UPHONE
-            }
-        
+                    }
+    
     
     
 def sign_in(member):
     if not isinstance(member, dict):
         print("로그인 시스템에 오류가 발생했습니다. (회원 데이터가 올바르지 않습니다.)")
         return None
-    
     print('로그인하실 UserID, UserPW를 입력해주세요. ')
-
     Login_ID = input('UserId: ')
     Login_PW = input('UserPw: ')
-
     if Login_ID in member: 
-    
         if member [Login_ID] ['UPW'] == Login_PW:
             print('로그인이 완료되었습니다.')
             return Login_ID
+        
                 
         else:
             print('비밀번호가 틀렸습니다. ')  
